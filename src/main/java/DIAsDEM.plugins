@@ -1,0 +1,45 @@
+# This file contains all default plug-ins of DIAsDEM Workbench. 
+# Copy this file into the directory ${DIAsDEM_HOME} and modify the
+# list of class names in order to register additional plug-ins.
+org.hypknowsys.diasdem.tasks.understand.computeTermFrequencyStatistics.ComputeTermFrequencyStatisticsTask
+org.hypknowsys.diasdem.tasks.understand.findCollocationsFrequencyPosFilter.FindCollocationsFrequencyPosFilterTask
+org.hypknowsys.diasdem.tasks.understand.establishInitialThesaurus.EstablishInitialThesaurusTask
+org.hypknowsys.diasdem.tasks.prepare.createDocumentCollection.CreateDocumentCollectionTask
+org.hypknowsys.diasdem.tasks.prepare.importPlainTextFiles.ImportPlainTextFilesTask
+org.hypknowsys.diasdem.tasks.prepare.importReuters21578Files.ImportReuters21578FilesTask
+org.hypknowsys.diasdem.tasks.prepare.importReutersCorpusVol1.ImportReutersCorpusVol1Task
+org.hypknowsys.diasdem.tasks.prepare.importHtmlFilesFromTheWeb.ImportHtmlFilesFromTheWebTask
+org.hypknowsys.diasdem.tasks.prepare.createTextUnits.CreateTextUnitsTask
+org.hypknowsys.diasdem.tasks.prepare.tokenizeTextUnits.TokenizeTextUnitsTask
+org.hypknowsys.diasdem.tasks.prepare.replaceNamedEntities21.ReplaceNamedEntitiesTask
+org.hypknowsys.diasdem.tasks.prepare.removeStopwords.RemoveStopwordsTask
+org.hypknowsys.diasdem.tasks.prepare.lemmatizeTextUnits.LemmatizeTextUnitsTask
+org.hypknowsys.diasdem.tasks.prepare.convertTextUnits.ConvertTextUnitsTask
+org.hypknowsys.diasdem.tasks.prepare.disambiguateWordSenses.DisambiguateWordSensesTask
+org.hypknowsys.diasdem.tasks.prepare.vectorizeTextUnits22.VectorizeTextUnitsTask
+org.hypknowsys.diasdem.tasks.discover.clusterTextUnitVectorsHypknowsys.ClusterTextUnitVectorsHypknowsysTask
+org.hypknowsys.diasdem.tasks.discover.clusterTextUnitVectorsWeka.ClusterTextUnitVectorsWekaTask
+org.hypknowsys.diasdem.tasks.postprocess.monitorClusterQuality22.MonitorClusterQualityTask
+org.hypknowsys.diasdem.tasks.postprocess.tagTextUnits.TagTextUnitsTask
+org.hypknowsys.diasdem.tasks.postprocess.deriveConceptualDtd22.DeriveConceptualDtdTask
+org.hypknowsys.diasdem.tasks.postprocess.tagDocuments22.TagDocumentsTask
+org.hypknowsys.diasdem.tasks.postprocess.drawDocumentSample22.DrawDocumentSampleTask
+org.hypknowsys.diasdem.tasks.deploy.exportOracle8iSqlScripts.ExportOracle8iSqlScriptsTask
+org.hypknowsys.diasdem.tasks.project.newProject.NewProjectTask
+org.hypknowsys.diasdem.tasks.project.openProject.OpenProjectTask
+org.hypknowsys.diasdem.tasks.project.closeProject.CloseProjectTask
+org.hypknowsys.diasdem.tasks.miscellaneous.rollbackProcessedTextUnits.RollbackProcessedTextUnitsTask
+org.hypknowsys.diasdem.tasks.miscellaneous.replaceLabelsOfTextUnits.ReplaceLabelsOfTextUnitsTask
+org.hypknowsys.diasdem.tasks.miscellaneous.tokenizeDocumentMetaData.TokenizeDocumentMetaDataTask
+org.hypknowsys.diasdem.tasks.miscellaneous.tokenizeParameterTextFile.TokenizeParameterTextFileTask
+org.hypknowsys.diasdem.tasks.miscellaneous.convertParameterTextFile.ConvertParameterTextFileTask
+org.hypknowsys.diasdem.tasks.miscellaneous.mergeParameterTextFiles.MergeParameterTextFilesTask
+org.hypknowsys.diasdem.tasks.miscellaneous.decomposeOrganizationNames.DecomposeOrganizationNamesTask
+org.hypknowsys.diasdem.tasks.miscellaneous.searchTheWebForHtmlFiles.SearchTheWebForHtmlFilesTask
+org.hypknowsys.diasdem.resources.templates.taskTemplate.TemplateTask
+org.hypknowsys.diasdem.resources.templates.blockingTaskTemplate.TemplateTask
+org.hypknowsys.diasdem.resources.templates.nonBlockingTaskTemplate.TemplateTask
+org.hypknowsys.diasdem.client.gui.solutions.wekaKnowledgeExplorer.WekaKnowledgeExplorerTask
+org.hypknowsys.diasdem.client.gui.tools.xmlDocumentViewer.XmlDocumentViewerTask
+org.hypknowsys.diasdem.client.gui.tools.htmlDocumentViewer.HtmlDocumentViewerTask
+org.hypknowsys.diasdem.client.gui.tools.regexTestEnvironment.RegexTestEnvironmentTask

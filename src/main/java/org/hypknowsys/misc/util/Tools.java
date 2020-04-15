@@ -588,25 +588,25 @@ public class Tools {
       for (int i = 0; i < attributeNameLength; i++) {
         if (validChars.indexOf( pAttributeName.charAt(i) ) >= 0)
           result.append( pAttributeName.charAt(i) );
-        if  (pAttributeName.charAt(i) == 'ü') 
+        if  (pAttributeName.charAt(i) == 'Ã¼')
           result.append( (result.toString().length() + suffixLength + 2 
           <= pMaxSize ? "ue" : "u") );
-        if  (pAttributeName.charAt(i) == 'ö')
+        if  (pAttributeName.charAt(i) == 'Ã¶')
           result.append( (result.toString().length() + suffixLength + 2 
           <= pMaxSize ? "oe" : "o") );
-        if  (pAttributeName.charAt(i) == 'ä')
+        if  (pAttributeName.charAt(i) == 'Ã¤')
           result.append( (result.toString().length() + suffixLength + 2 
           <= pMaxSize ? "ae" : "a") );
-        if  (pAttributeName.charAt(i) == 'Ü')
+        if  (pAttributeName.charAt(i) == 'Ãœ')
           result.append( (result.toString().length() + suffixLength + 2 
           <= pMaxSize ? "Ue" : "U") );
-        if  (pAttributeName.charAt(i) == 'Ö')
+        if  (pAttributeName.charAt(i) == 'Ã–')
           result.append( (result.toString().length() + suffixLength + 2 
           <= pMaxSize ? "Oe" : "O") );
-        if  (pAttributeName.charAt(i) == 'Ä')
+        if  (pAttributeName.charAt(i) == 'Ã„')
           result.append( (result.toString().length() + suffixLength + 2 
           <= pMaxSize ? "Ae" : "A") );
-        if  (pAttributeName.charAt(i) == 'ß')
+        if  (pAttributeName.charAt(i) == 'ÃŸ')
           result.append( (result.toString().length() + suffixLength + 2 
           <= pMaxSize ? "sz" : "s") );
         if (result.toString().length() + suffixLength > pMaxSize)
@@ -630,13 +630,13 @@ public class Tools {
       switch ( pSource.charAt(i) ) {
         // & must be replaced first, because it is part of entities
         case '&': { result.append("&amp;"); break; }
-        case 'ü': { result.append("&uuml;"); break; }
-        case 'Ü': { result.append("&Uuml;"); break; }
-        case 'ö': { result.append("&ouml;"); break; }
-        case 'Ö': { result.append("&Ouml;"); break; }
-        case 'ä': { result.append("&auml;"); break; }
-        case 'Ä': { result.append("&Auml;"); break; }
-        case 'ß': { result.append("&szlig;"); break; }
+        case 'Ã¼': { result.append("&uuml;"); break; }
+        case 'Ãœ': { result.append("&Uuml;"); break; }
+        case 'Ã¶': { result.append("&ouml;"); break; }
+        case 'Ã–': { result.append("&Ouml;"); break; }
+        case 'Ã¤': { result.append("&auml;"); break; }
+        case 'Ã„': { result.append("&Auml;"); break; }
+        case 'ÃŸ': { result.append("&szlig;"); break; }
         case '<': { result.append("&lt;"); break; }
         case '>': { result.append("&gt;"); break; }
         case '\"': { result.append("&quot;"); break; }
@@ -1228,7 +1228,7 @@ public class Tools {
           || breakChar == '.' || breakChar == '!' || breakChar == '?'
           || breakChar == '~' || breakChar == '=' || breakChar == ')'
           || breakChar == '(' || breakChar == '&' || breakChar == '%'
-          || breakChar == '$' || breakChar == '§' || breakChar == '"'
+          || breakChar == '$' || breakChar == 'ï¿½' || breakChar == '"'
           || breakChar == '\'' || breakChar == '\t' || breakChar == '\n'
           || breakChar == '>' || breakChar == '<' || breakChar == '#')
           && tries++ < 20 && (breakIndex - 1) >= 0) {
@@ -1281,7 +1281,7 @@ public class Tools {
           || breakChar == '.' || breakChar == '!' || breakChar == '?'
           || breakChar == '~' || breakChar == '=' || breakChar == ')'
           || breakChar == '(' || breakChar == '&' || breakChar == '%'
-          || breakChar == '$' || breakChar == '§' || breakChar == '"'
+          || breakChar == '$' || breakChar == 'ï¿½' || breakChar == '"'
           || breakChar == '\'' || breakChar == '\t' || breakChar == '\n'
           || breakChar == '>' || breakChar == '<' || breakChar == '#')
           && tries++ < 20 && (breakIndex - 1) >= 0) {
