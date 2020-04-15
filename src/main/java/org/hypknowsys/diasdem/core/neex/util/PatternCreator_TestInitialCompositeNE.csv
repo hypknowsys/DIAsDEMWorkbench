@@ -1,0 +1,8 @@
+attribute0;attribute1
+String;String
+"Das ist ein leerer String";"null"
+"<<organization>>";"company( 0 , null )"
+"<<organization>> mit Sitz in <<place>>";"company( 0 , 4 )"
+"<<organization>> gegr|ndet am <<date>>";"company( 0 , null )"
+"<<forename>> - <<forename>> <<surname>>";"person( 3 , 0 \"-\" 2 , null , null , null , null , null )"
+"<<forename>> - <<forename>> <<surname>> , geb. am <<date>> , <<place>>";"person( 3 , 0 \"-\" 2 , null , null , 7 , null , 9 )"

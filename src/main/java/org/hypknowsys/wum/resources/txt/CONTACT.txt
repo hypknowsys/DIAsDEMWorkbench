@@ -1,0 +1,6 @@
+WUM - The Web Utilization Miner
+
+Project leader: Myra Spiliopoulou, myra{at}hypKNOWsys{d0t}org
+Code coordinator: Karsten Winkler, kwinkler{at}hypKNOWsys{d0t}org
+
+Project home page: http://www.hypknowsys.org/wum

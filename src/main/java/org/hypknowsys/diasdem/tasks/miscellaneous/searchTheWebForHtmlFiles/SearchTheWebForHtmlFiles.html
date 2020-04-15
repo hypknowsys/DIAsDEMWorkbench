@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+ * Copyright (C) 2000-2005, Henner Graubitz, Myra Spiliopoulou, Karsten 
+ * Winkler. All rights reserved.
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ * 
+ * @version 2.1.2.0, 13 May 2004
+ * @author Karsten Winkler
+-->
+<html>
+<head>
+<title>Search the Web for HTML Files</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
+<!--
+body  {font-size: small; font-family: SansSerif, Arial, Helvetica, sans-serif;
+margin-left: 5; margin-right: 5; color: Black; background-color: White}
+
+p  {font-size: small; margin-top: 5; margin-bottom: 5}
+h2 { font-size: large; font-weight: bold; margin-top: 10; margin-bottom: 5}
+h3 { font-size: medium; font-weight: bold; margin-top: 10; margin-bottom: 5}
+h4 { font-size: small; font-weight: bold; margin-top: 10; margin-bottom: 5}
+h6 { font-size: small; font-weight: bold; margin-top: 0; margin-bottom: 10}
+
+ol {margin-top: 5; margin-bottom: 0; margin-left: 14}
+li {margin-top: 0; margin-bottom: 5}        
+li p{margin-top: 5; margin-bottom: 0}
+ul {margin-top: 5; margin-bottom: 0; margin-left: 14}
+        
+table {border-style: solid; border-color: silver; margin-top: 5; margin-bottom: 5}
+td {border-style: solid; border-color: silver; padding-left: 1; padding-right: 1;
+padding-top: 1; padding-bottom: 1; font-size: small; text-align: left; 
+vertical-align: top}
+th {border-style: solid; border-color: silver; padding-left: 1; padding-right: 1;
+padding-top: 1; padding-bottom: 1; font-weight: bold; font-size: small; 
+text-align: left; vertical-align: top}
+
+small {font-size: x-small}
+-->
+</style>
+</head>
+<body>
+<a name="top"><h2>Search the Web for HTML Files</h2></a>
+
+<p><small>
+<a href="#module">Module</a><br>
+<a href="#description">Description</a><br>
+<a href="#prerequisites">Prerequisites</a><br>
+<a href="#result">Result</a><br>
+<a href="#remarks">Remarks</a><br>
+<a href="#parameters">Parameters</a><br>
+</small></p>
+
+<a name="module"><h3>Module</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>Actions &raquo; Miscellaneous &raquo; Search the Web for HTML Files</p>
+
+<a name="description"><h3>Description</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>
+Given a user-specific information need, this task requests a list of relevant
+URLs from the Google Web service. In addition to specifying query terms, one's 
+information need can be expressed in detail by means of several Google-specific
+parameters. For example, the search can be restricted to Web pages, which
+have been published on known Web sites, in a specific language, or within 
+a certain date range. In particular, this task can be employed to collect a list
+thematically relevant URLs for subsequent download and semantic text annotation.
+</p>
+
+<a name="prerequisites"><h3>Prerequisites</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>An established Internet connection is assumed in order to successfully submit
+the query and download relevant URLs. In addition, the user needs a personal
+Google API search key, which is freely available as of May 2004 for research and 
+personal usage. To obtain a search key, the user has to set up a Google account 
+at <code>http://www.google.com/apis/</code> and declare to abide by the license 
+terms.</p>
+
+<a name="result"><h3>Result</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>After calling the Google Web service, the most relevant URLs are stored in
+a plain text file. This so-called download URL file can subsequently serve as
+input to the task <i>Import HTML Files from the Web</i> in order to import the
+textual file contents into a DIAsDEM collection for further processing. See
+below an example for a download URL file:</p>
+
+<pre>
+# Google Search Result (0.302296 sec.), Start Index: 1, End Index: 2
+# Search Date: Wed May 12 17:02:42 CEST 2004
+# Search String: "DIAsDEM Workbench" filetype:html OR filetype:htm 
+http://www.diasdem.de/index.html
+http://www.hypknowsys.org/index.html
+</pre>
+
+<a name="remarks"><h3>Remarks</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>As of May 2004, the Google Web APIs service is in beta release. All 
+interfaces are subject to change as Google refines and extends the APIs. 
+Please see the terms of use (in the file "LICENSE.txt") for more information.</p>
+
+<a name="parameters"><h3>Parameters</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<h4>Download URL File</h4>
+<p>Output parameter: Valid local file name of new or existing download URL
+file, which is either created or replaced by DIAsDEM Workbench; file extension: 
+<code>.url<code>; default value: project property <i>Search the Web for 
+HTML Files: Default Download URL File</i></p>
+
+<h4>Google Search Key</h4>
+<p>Input parameter: String, which was assigned to the user as a personal
+Google search key; default value: project property <i>Search the Web for HTML
+ Files: Google Search Key</i></p>
+
+<h4>Google Search String</h4>
+<p>Input parameter: String, which defines the query terms in a Google-specific
+syntax; examples: <code>&quot;DIAsDEM Workbench&quot;</code> and <code>Star 
+Wars Episode +I</code>; default value: project property <i>Search the Web for 
+HTML Files: Google Search String</i></p>
+
+<h4>Max. Number of Results</h4>
+<p>Input parameter: Integer greater than zero, which defines the maximum number
+of most relevant URLs to be retrieved from Google; default value: project 
+property <i>Search the Web for HTML Files: Max. Number of URLs to be 
+Retrieved</i></p>
+
+<h4>Restrict Sites</h4>
+<p>Optional input parameter: Comma-separated list of Web sites, which restricts
+the search to Web pages published on the specified Web sites; examples: 
+<code>www.berlin.de</code> as well as 
+<code>www.diasdem.de,www.hypknowsys.org</code>; default value: project property 
+<i>Search the Web for HTML Files: Restrict Search to these Web Sites</i></p>
+
+<h4>Restrict File Type</h4>
+<p>Optional input parameter: Comma-separated list of file extensions, which
+restricts the search file of the specified type or file extension; example: 
+<code>html,htm,php</code>; default value: project property <i>Search the Web 
+for HTML Files: Restrict Search to these File Types</i></p>
+
+<h4>Restrict Date (Start)</h4>
+<p>Optional input parameter: Start date in YYYY-MM-DD format, which indicates
+the begin of the date range to restrict the search to Web pages published within 
+a specific date range; examples: <code>2004-01-01</code> for January 1, 2004, 
+and <code>2004-12-31</code> for December 31, 2004; default value: project 
+property <i>Search the Web for HTML Files: Start Date that Restricts Search</i>
+</p>
+
+<h4>Restrict Date (End)</h4>
+<p>Optional input parameter: End date in YYYY-MM-DD format, which indicates
+the end of the date range to restrict the search to Web pages published within 
+a specific date range; examples: <code>2004-01-01</code> for January 1, 2004, 
+and <code>2004-12-31</code> for December 31, 2004; default value: project 
+property <i>Search the Web for HTML Files: End Date that Restricts Search</i>
+</p>
+
+<h4>Restrict Language</h4>
+<p>Optional input parameter: One Google-specific language identifier, which 
+restricts the search to language-specific Web pages; examples: 
+<code>lang_en</code> for English Web pages and <code>lang_de</code> for German
+Web pages; default value: project property <i>Search the Web for HTML Files: 
+Restrict Search to this Language</i></p>
+
+
+<p><small>
+<a name="bot"><a href="#top">Top of the Page</a></a>
+</small></p>
+</body>
+</html>

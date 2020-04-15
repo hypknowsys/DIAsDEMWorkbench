@@ -1,0 +1,7 @@
+# hier kommt ein Kommentar
+Name;Customer;Age;Revenue
+# hier kommt noch einer
+String;boolean;int;double
+"Miller";true;12;120.1234
+# und hier erst recht
+"Smith \"the Magic\"";false;99;1000

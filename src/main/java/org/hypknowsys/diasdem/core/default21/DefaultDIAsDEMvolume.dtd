@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- DIAsDEM Workbench 2.1, 15 August 2003, kwinkler -->
+
+<!ELEMENT DefaultDIAsDEMvolume (
+  DefaultDIAsDEMdocument* )
+>
+
+<!ATTLIST DefaultDIAsDEMvolume
+  NumberOfDocuments CDATA #IMPLIED
+>
+
+<!ELEMENT DefaultDIAsDEMdocument ( 
+  MetaData*, 
+  OriginalText,
+  TextUnitsLayer* )
+>
+
+<!ATTLIST DefaultDIAsDEMdocument
+  NumberOfTextUnitsLayers CDATA #IMPLIED
+>
+
+<!ELEMENT MetaData (
+  Name, 
+  Content )
+>
+<!ELEMENT OriginalText (#PCDATA)>
+<!ELEMENT TextUnitsLayer ( 
+  MetaData*, 
+  OriginalTextUnits, 
+  ProcessedTextUnits?,
+  RollbackTextUnits*,
+  NamedEntities? )
+>
+
+<!ATTLIST TextUnitsLayer
+  TextUnitsLayerID CDATA #IMPLIED
+  TextUnitsDescription CDATA #IMPLIED
+>
+
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Content (#PCDATA)>
+<!ELEMENT OriginalTextUnits (OriginalTextUnit+)>
+<!ELEMENT ProcessedTextUnits (ProcessedTextUnit+)>
+<!ELEMENT RollbackTextUnits (ProcessedTextUnit+)>
+<!ELEMENT NamedEntities (NamedEntity+)>
+
+<!ATTLIST RollbackTextUnits
+  RollbackID CDATA #IMPLIED
+>
+
+<!ELEMENT OriginalTextUnit (#PCDATA)>
+<!ELEMENT ProcessedTextUnit (#PCDATA | NeRef)*>
+<!ELEMENT RollbackTextUnit (#PCDATA | NeRef)*>
+<!ELEMENT NamedEntity (#PCDATA)>
+
+<!ATTLIST OriginalTextUnit 
+  TextUnitID CDATA #IMPLIED
+  BeginIndex CDATA #IMPLIED
+  EndIndex CDATA #IMPLIED
+>
+
+<!ATTLIST ProcessedTextUnit
+  TextUnitID CDATA #IMPLIED
+  Iteration CDATA #IMPLIED
+  ClusterID CDATA #IMPLIED
+  ClusterLabel CDATA #IMPLIED
+>
+
+<!ATTLIST NamedEntity 
+  NeID CDATA #IMPLIED
+  NeType CDATA #IMPLIED
+>
+
+<!ELEMENT NeRef EMPTY>
+
+<!ATTLIST NeRef
+  NeID CDATA #IMPLIED
+>

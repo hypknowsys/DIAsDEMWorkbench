@@ -1,0 +1,6 @@
+DIAsDEM - Data Integration of Legacy Data and Semi-Structured Documents by Employing Data Mining Techniques
+
+Project leader: Myra Spiliopoulou, myra{at}hypKNOWsys{d0t}org
+Code coordinator: Karsten Winkler, kwinkler{at}hypKNOWsys{d0t}org 
+
+Project home page: http://www.hypKNOWsys.org

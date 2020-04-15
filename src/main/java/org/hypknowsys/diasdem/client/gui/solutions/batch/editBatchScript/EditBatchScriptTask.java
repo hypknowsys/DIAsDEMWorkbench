@@ -1,0 +1,179 @@
+/*
+ * Copyright (C) 2000-2005, Henner Graubitz, Myra Spiliopoulou, Karsten 
+ * Winkler. All rights reserved.
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ */
+
+package org.hypknowsys.diasdem.client.gui.solutions.batch.editBatchScript;
+
+import org.hypknowsys.core.Project;
+import org.hypknowsys.core.Script;
+import org.hypknowsys.core.ScriptTask;
+import org.hypknowsys.diasdem.server.DiasdemTask;
+import org.hypknowsys.server.AbstractValidatedTaskParameter;
+import org.hypknowsys.server.Server;
+import org.hypknowsys.server.TaskParameter;
+
+/**
+ * @version 2.1, 15 August 2003
+ * @author Karsten Winkler
+ */
+  
+public class EditBatchScriptTask extends DiasdemTask {
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## attributes  */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  private EditBatchScriptParameter CastParameter = null;
+  
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## auxiliary attributes  */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  private transient StringBuffer TmpStringBuffer = null;
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## constants  */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  private final static String LABEL = 
+  "Edit Batch Script"; 
+  private final static String TASK_PARAMETER_CLASS_NAME = 
+  "org.hypknowsys.diasdem.client.gui.solutions.batch.editBatchScript" +
+  ".EditBatchScriptParameter"; 
+  private final static String CONTROL_PANEL_CLASS_NAME =  
+  "org.hypknowsys.diasdem.client.gui.solutions.batch.editBatchScript" +
+  ".EditBatchScriptControlPanel"; 
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## constructors  */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  public EditBatchScriptTask() { 
+
+    super();
+    
+    Label = LABEL;
+    TaskParameterClassName = TASK_PARAMETER_CLASS_NAME;
+    ControlPanelClassName = CONTROL_PANEL_CLASS_NAME;
+
+  }
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## accessor methods */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## mutator methods */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## standard methods */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  public String toString() { 
+
+    TmpStringBuffer = new StringBuffer(1000);
+    TmpStringBuffer.append(this.getClass().getName());
+    
+    return TmpStringBuffer.toString();
+    
+  }
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## interface Task methods */
+  /* ########## ########## ########## ########## ########## ######### */
+  
+  public AbstractValidatedTaskParameter validateTaskParameter(
+  Project pProject, TaskParameter pParameter) {
+       
+    Parameter = pParameter;
+    CastParameter = (EditBatchScriptParameter)pParameter;
+    Script script = CastParameter.getDiasdemScript();
+    
+    AbstractValidatedTaskParameter result = 
+    new AbstractValidatedTaskParameter(Parameter);
+    
+    if (script == null || script.countScriptTasks() == 0) {
+      result.addError(
+      "Error: The current batch script does\n"
+      + "not contain any task at all! Empty\n"
+      + "batch scripts cannot be saved.");
+      return result;
+    }
+
+    if (script.getLabel() == null || script.getLabel().length() == 0) {
+      result.addWarning(
+      "Warning: The script has an empty label.\n" +
+      "Do you really want to continue?");      
+    }
+        
+    ScriptTask task = null;
+    for (int i = 0; i < script.countScriptTasks(); i++) {
+      task = script.getScriptTask(i);
+      if (task.getClassName() == null || task.getClassName().length() == 0) {
+        result.addError(
+        "Error: Task " + (i+1) + " of the current batch script does not\n"
+        + "contain its respective class name. Please input a\n"
+        + "valid Java class name such as diasdem.tasks.MyTask\n"
+        + "in the field 'Class Name'. This class must implement\n"
+        + "certain Java interfaces as described in the tutorial.");
+      }
+      if (task.getParameter() == null) {
+        result.addError(
+          "Error: Task " + (i+1) + " of the current batch\n"
+        + "script does not have parameter settings.");
+      }
+      
+    }
+  
+    return result;
+    
+  }
+
+  /* ########## ########## ########## ########## ########## ######### */
+  
+  public TaskParameter getDefaultTaskParameter(Server pServer, 
+  Project pProject) {
+    
+    return new EditBatchScriptParameter();
+    
+  }
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## public methods */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## protected methods */
+  /* ########## ########## ########## ########## ########## ######### */
+  
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## private methods */
+  /* ########## ########## ########## ########## ########## ######### */
+  
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## static methods */
+  /* ########## ########## ########## ########## ########## ######### */
+  
+  /* ########## ########## ########## ########## ########## ######### */
+  /* ########## main method for debugging purposes  */
+  /* ########## ########## ########## ########## ########## ######### */
+
+  public static void main(String args[]) {}
+  
+}

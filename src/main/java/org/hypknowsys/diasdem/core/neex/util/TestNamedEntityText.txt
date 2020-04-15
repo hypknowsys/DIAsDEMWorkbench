@@ -1,0 +1,79 @@
+# Note, the following text must have been tokenized by DIAsDEM Workbench.
+# This text must not contain named entity placeholders such as '<<1>>'.
+#Gegenstand des Unternehmens : Verkauf , Vermietung , Ankauf und Handel von Erzeugnissen der Hebe - und Flurfördertechnik allgemein , insbesondere von Gabelstaplern , deren Wartung und Reparatur , sowie von Kraftfahrzeugen - Spezialfahrzeugen und Zubehör sowie Kräne - Krananlagen - Baumaschinen - Anhänger einschließlich des Transportes , also Abholung , Anlieferung , Umsetzung der Geräte / Fahrzeuge .
+#Komplettierung und Montage von vorgefertigten Regalbauteilen für Lager und Läden .
+#Stammkapital : 25000,00 EUR in Rothenburg ob der Tauber oder in Frankfurt / Oder .
+#Geschäftsführer : Prof. Dr. Gerald Arnhold , geb. 18.10.1961 , Dresden ; Jean Stecher , geb. 03.08.1973 , Hohenstein - Ernstthal bzw. Hohenstein - das - Ernstthal bzw. Hohenstein - das Kaff - Ernstthal .
+#GmbH mit Gesellschaftsvertrag vom 09.05.2001 .
+#Die GmbH hat einen Gesellschaftsvertrag vom 09.05.2001 .
+#Gesellschafterin DiE Test ABC GmbH hat einen Gesellschaftsvertrag vom 09.05.2001 .
+#Ist nur ein Geschäftsführer bestellt , so vertritt er die Gesellschaft allein .
+#Geschäftsführer : StR. Rektor irgendeintitel Prof.Dr. Matthias Bothe , geb. 04.04.1958 , Laatzen .
+#Geschäftsführer : StR. Rektor irgendeintitel Prof.Dr. Dr. Matthias Bothe , geb. 04.04.1958 , Laatzen .
+#Geschäftsführer : StR. Rektor Prof. Dr. Matthias Bothe , geb. 04.04.1958 , Laatzen .
+#Geschäftsführer : StR. Rektor Dr. Matthias Bothe , geb. 04.04.1958 , Laatzen .
+#Geschäftsführer : StR. Dr. Matthias Bothe , geb. 04.04.1958 , Frankfurt am Main .
+#Der Geschäftsführer Matthias Bothe ist stets einzelvertretungsberechtigt und ist befugt , die Gesellschaft bei der Vornahme von Rechtsgeschäften mit sich selbst oder mit sich als Vertreter eines Dritten zu vertreten .
+#HRB 6153 - 04.12.2000 : ThermoHaus GmbH , Sitz : Cottbus ( Nordparkstr. 30 , 03044 Cottbus ) .
+#Mit Gesellschafterbeschluss vom 03.02.2000 ist der Sitz von Wismar nach Cottbus verlegt , die Firma und der Gegenstand geändert und der Gesellschaftsvertrag in § 1 ( Firma ) , § 2 ( Sitz ) und § 3 ( Gegenstand ) geändert worden .
+#Peter Paul Bondzio , Wojciech Wasilewski , Krzysztof Wasilewski , Pawel Cyrkiel , Dariusz Gaska , Jürgen Kuhlmey und Olaf Teschke sind nicht mehr Geschäftsführer .
+#Neuer Geschäftsführer : Frank Mücker , geb. 27.04.1966 , Forst , vertritt die Gesellschaft einzeln und darf im Namen der Gesellschaft mit sich im eigenen Namen oder mit sich als Vertreter Dritter Rechtsgeschäfte vornehmen .
+#HRB 6230 - 13.08.2001 : KH Türen Handels - GmbH , Loburg , wohin der Sitz von Lippstadt verlegt ist ( Am Ziemnitzgraben 1 -23 , 39279 Loburg ) .
+#Erich Henkenjohann und Frank Kühl vertreten die Gesellschaft jeweils allein und sind befugt , Rechtsgeschäfte mit sich selbst oder mit sich als Vertreter Dritter abzuschließen .
+#Geschäftsführer : Andreas Weychert , geb. am 18.05.1945 , Uffenheim ; Thomas Weychert , geb. am 06.09.1972 , Uffenheim .
+#Die Geschäftsführer Andreas Weychert und Thomas Weychert haben Einzelvertretungsrecht und sie sind berechtigt , die Gesellschaft bei der Vornahme von Rechtsgeschäften mit sich selbst oder als Vertreter eines Dritten uneingeschränkt zu vertreten .
+#HRA 13717 - 23.01.2001 : Bauunternehmen Klaus Mosch GmbH & Co. KG , Wurzen - Roitzsch ( Hauptstr. 9 , 04808 Wurzen - Roitzsch ) .
+#Persönlich haftender Gesellschafter : Mosch Beteiligungsgesellschaft mbH , Sitz : Wurzen - Roitzsch ( Amtsgericht Leipzig , HRB 17483 ) .
+#Die Mosch Beteiligungsgesellschaft mbH ist befugt , die Gesellschaft bei der Vornahme von Rechtsgeschäften mit sich selbst oder mit sich als Vertreter eines Dritten zu vertreten .
+#Die Gesellschaft ist durch formwechselnde Umwandlung gemäß §§ 190 ff. UmwG der Wurst - Spezi GmbH Schenkenberg , Sitz : Schenkenberg ( Amtsgericht Leipzig , HRB 5634 ) , entstanden und hat am Tag der Eintragung begonnen .
+#HRA 13 803 -- 27. Juni 2001 : Dr. Bryholm Formen- und Werkzeugbau GmbH & Co. KG , Pegau Zweigniederlassung der Firma Scholl-Plastic GmbH & Co. KG mit Sitz in Mausbach (Amtsgericht Eschweiler, HRA 340) (Carsdorfer Höhe 19, 04523 Pegau).
+#Den ersten Aufsichtsrat der Test AG Import und Export und der Test AG und der Test AG Import bilden : Klaus - Dieter Blasche , Versicherungskaufmann , Taunusstein ; Dr. jur. Klaus Hasse , Rechtsanwalt , Berlin und Peter Yaacoub , Dipl.-Ing. FH , Egolzwil ( Schweiz ) .
+#Die Gründer der Aktiengesellschaft , die sämtliche Aktien übernommen haben sind : Christoph Hermann , Chemnitz ; Dieter Herrmann , Schöffengrund - Laufdorf ; Michael Herbst , Rechlin ; Harald Herrmann , Karche - Zaacko und Gerrit Fiedler , Grünheide / Mark .
+#Gesellschaft_mit_beschränkter_Haftung . Die Gründer einer Aktiengesellschaft ...
+#Die Gesellschafter der Gesellschaft_mit_beschränkter_Haftung ...
+#HRA 1311 - 27.02.2001 : Malermeister Hans - Jürgen Primm Inhaber Michael Haraschke e. K. , Sitz : Döbern ( Hohe Bergstr. 5 a , 03159 Döbern ) .
+#HRA 1311 - 27.02.2001 : Helmut Samosny Immobilien / Haus - und Grundbesitz , Leipzig ( Queckstr. 11 , 04177 Leipzig ) .
+#Aufgrund des Verschmelzungsvertrages vom 07. Januar 1993 und des Beschlusses der Hauptversammlung der Berliner Commerzbank Aktiengesellschaft vom 02. Dezember 1992 hat diese als übertragendes Unternehmen ihr Vermögen als Ganzes unter Ausschluß der Abwicklung auf die Commerzbank Aktiengesellschaft als übernehmende Gesellschaft übertragen (Verschmelzung durch Aufnahme gemäß §§ 339ff. AktG). Durch Beschluß der Hauptversammlung der Commerz-Credit-Bank Aktiengesellschaft Europartner in Saarbrücken vom 24. März 1994 ist die letztgenannte Gesellschaft auf Grund des Verschmelzungsvertrages vom 18. Mai 1994 durch Übertragung ihres Vermögens als Ganzes ohne Abwicklung auf die Commerzbank Aktiengesellschaft mit dieser gemäß §§ 339 Abs. 1 Ziff. 1 i. V. m. 352b Abs. 1 u. Abs. 2 AktG verschmolzen .
+#(Verschmelzung durch Aufnahme gemmäß §§ 339ff. AktG). Durch Beschluß der Hauptversammlung der Commerz-Credit-Bank Aktiengesellschaft Europartner in Saarbrücken vom 24. März 1994 ist die letztgenannte Gesellschaft auf Grund des Verschmelzungsvertrages vom 18. Mai 1994 durch Übertragung ihres Vermögens als Ganzes ohne Abwicklung auf die Commerzbank Aktiengesellschaft mit dieser gemäß §§ 339 Abs. 1 Ziff. 1 i. V. m. 352b Abs. 1 u. Abs. 2 AktG verschmolzen .
+#Den ersten Aufsichtsrat der Test AG ) .
+##### Blumenladen Marlis Naujoks e. Kfr. == organization != company 
+#Die Firma ist geändert und lautet nunmehr: der Blumenladen Marlis Naujoks e. Kfr.
+#Die Firma ist geändert und lautet nunmehr: der Blumenladen Marlis Naujoks GmbH  
+#Die Firma ist geändert und lautet nunmehr: der Blumenladen Marlis Naujoks e. Kfr. Das ist ein Test ...
+#Die Firma ist geändert und lautet nunmehr: der Blumenladen Marlis Naujoks GmbH Import
+#Die Firma ist geändert in : A GmbH Verwaltungs - KG Steuerberatungsgesellschaft Bonn und Baden - Baden .
+#Die Firma ist geändert in : Jupiter - Apotheke Inh. Dr. Jürgen Wunderlich e.K. , Sitz : Neu - Hardenberg OT Berlin.
+#Die Firma ist geändert in : Jupiter - Apotheke Inh. Dr. Jürgen Wunderlich e.K. in Berlin oder Baden Baden .
+#Die Firma ist geändert in : Jupiter - Apotheke Inh. Dr. Jürgen Wunderlich e.K. in Berlin a.d. Spree .
+#Die Firma ist geändert in : Jupiter - Apotheke Inh. Dr. Jürgen Wunderlich e.K. in Berlin a.d. Rhein .
+#Marta Sander geb. Meyer ist nicht mehr Geschäftsführer in der TV - Markt Sangerhausen GmbH Sitz
+#( Neuer Sitz : 06886 Wittenberg OT Rhein . Seegrehna )
+#( Neuer Sitz : 06886 Wittenberg OT Seegrehna )
+##### Karl - Heinz Pfisterer != person_name
+#und Karl - Heinz Meier , Berlin , ist Mitglied des Aufsichtsrats . 
+#Gesellschafter Karl - Heinz Meier , Berlin , ist Mitglied des Aufsichtsrats . 
+#Vorstandsmitglied : Felix - Ernst Neukamp , geb. 12.12.2000 , Lauf a. d. Pegnitz . Rottenburg a. N.
+#Die Vorstandsmitglieder Jörg Trinemeier , Martin Rösch , Ernst Kristian Andersen und Egbert Janssen sind stets einzelvertretungsberechtigt und befugt , die Gesellschaft bei Rechtsgeschäften mit von ihnen vertretenen Dritten uneingeschränkt zu vertreten . 
+#Nunmehr Alleininhaber : Schaller Ernst , München , geb. 12.12.2000 . 
+#Der Alleingesellschafter , Herr Schmitt , der der Umwandlung zugestimmt und alle Aktien übernommen hat , ist Martin J. Schmitt , 66133 Saarbrücken 
+#und Dr. Nikolay Eduardovich Nifantiev , Moskau und auch von Müller Martin und auch von Dr. Meier , Martin und auch von Martin Müller .
+#Prokura zusammen mit einem Vorstandsmitglied 16 ) Breitmoser Rainer , München , geb. 12.12.2000 ; 17 ) Sobirey Klaus , München , geb. 12.12.2000 ; 18 ) Schneider Theobald , Feldkirchen - Westerham , geb. 12.12.2000 . 
+#Persönlich haftender Gesellschafter : Brandenburg , Achim , Köln , geb. 12.12.2000 , mit der Befugnis
+# Die Test AG mit Sitz in Breisach a. Rh. oder , Peine - Rosenthal ; Marburg - Cappel
+#Versorgung der Städte Bad Dürrheim , Donaueschingen und Bräunlingen ( Versorgungsgebiet )
+#Den ersten Aufsichtsrat bilden : Hans B. Michael Langhoff , Dipl.-Informatiker , Berlin , Vorsitzender ; Siegfried Heinrich , Dipl.-Ing. f. Bauwesen , Frankfurt / Oder , stellvertretender Vorsitzender ; Alexander Weiß , Dipl.-Kaufmann , Berlin . 
+#Persönlich haftende Gesellschafter : Lars Orbke , Bargteheide , geb. 12.12.2000 ; Pamela Wilkens , Nienburg / Weser , geb. 12.12.2000 .
+#Gründerin der Gesellschaft , die sämtliche Aktien übernommen hat , ist : Gutzeit , Yvonne , Kronberg i. Ts. Den ersten Aufsichtsrat bilden : Kronwald , Peter , Bankkaufmann , Greiz Freitag , Karl - Walter , Bankkaufmann , Köln , Dr. Koch , Petra , Ärztin , Köln . 
+#Johan Verhey , geb. 12.12.2000 , Oberboihingen , und Jürgen Wenzlitschke , geb. 12.12.2000 , Seeheim - Jugendheim , sind zu einzelvertretungsberechtigten Vorstandsmitgliedern bestellt .
+#Dr. Frank W. Keuper , geb. am 12.12.2000 , Köln - Lindenthal , und Norbert Rohrig , geb. am 12.12.2000 , Köln , sind zu weiteren Vorstandsmitgliedern bestellt . 
+#Den ersten Aufsichtsrat der Gesellschaft bilden : Andreas Eduardovich Meier zum , Dipl.-Ing. ( FH ) , Langebrück ; Axel Rosenbaum , Koch , Weinböhla ; Gerald Pforte , Kfz - Schlosser , Weinböhla .
+#Vorstand : Manfred Schwanz , 12.12.2000 , Steuerberater , Villingen - Schwenningen ; Ottmar Wolny , 12.12.2000 , Bösingen - Herrenzimmern .
+# Bau.Con GmbH GmbH & Co. KG in Gründung mit Sitz : Im Jagen 1 , ( 12345 ) Berlin und Sandbühl 2 A und Sandbühl 3 - 4 .
+#Bau.Con GmbH mit Sitz : Straße der DSF 1 , Musterstraße 1 b , Beispielgasse 22 , Berliner Straße 2 , Reichenbacher Str. 158 , Das Catering .
+#
+# HRA 7272 -- 04.04.2001 : Malerbetrieb Manfred Kolmich e. K. , Essen ( 12345 ; Erbslöhstr. 34 ) .
+#
+#HRA 7272 -- 04.04.2001 : Malerbetrieb Manfred Kolmich e. K. ( Erbslöhstr. 34 , 45326 Essen ) .
+#HRB 15213 : 17.12.2003 Autohaus Tiergarten GmbH Dessau ( Oranienbaumer Chaussee 1 , 06844 Dessau ) .
+#
+HRA 7272 -- 04.04.2001 : Das ist der Karsten Winkler von xyz DiE Test ABC GmbH AG . Das ist der P. Karsten Winkler .

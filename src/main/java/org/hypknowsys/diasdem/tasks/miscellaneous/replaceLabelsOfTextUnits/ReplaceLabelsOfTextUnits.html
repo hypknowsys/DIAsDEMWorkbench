@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+ * Copyright (C) 2000-2005, Henner Graubitz, Myra Spiliopoulou, Karsten 
+ * Winkler. All rights reserved.
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ * 
+ * @version 2.2, 7 May 2006
+ * @author Karsten Winkler
+-->
+<html>
+<head>
+<title>Replace Labels of Text Units</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
+<!--
+body  {font-size: small; font-family: SansSerif, Arial, Helvetica, sans-serif;
+margin-left: 5; margin-right: 5; color: Black; background-color: White}
+
+p  {font-size: small; margin-top: 5; margin-bottom: 5}
+h2 { font-size: large; font-weight: bold; margin-top: 10; margin-bottom: 5}
+h3 { font-size: medium; font-weight: bold; margin-top: 10; margin-bottom: 5}
+h4 { font-size: small; font-weight: bold; margin-top: 10; margin-bottom: 5}
+h6 { font-size: small; font-weight: bold; margin-top: 0; margin-bottom: 10}
+
+ol {margin-top: 5; margin-bottom: 0; margin-left: 14}
+li {margin-top: 0; margin-bottom: 5}        
+li p{margin-top: 5; margin-bottom: 0}
+ul {margin-top: 5; margin-bottom: 0; margin-left: 14}
+        
+table {border-style: solid; border-color: silver; margin-top: 5; margin-bottom: 5}
+td {border-style: solid; border-color: silver; padding-left: 1; padding-right: 1;
+padding-top: 1; padding-bottom: 1; font-size: small; text-align: left; 
+vertical-align: top}
+th {border-style: solid; border-color: silver; padding-left: 1; padding-right: 1;
+padding-top: 1; padding-bottom: 1; font-weight: bold; font-size: small; 
+text-align: left; vertical-align: top}
+
+small {font-size: x-small}
+-->
+</style>
+</head>
+<body>
+<a name="top"><h2>Replace Labels of Text Units</h2></a>
+
+<p><small>
+<a href="#module">Module</a><br>
+<a href="#description">Description</a><br>
+<a href="#prerequisites">Prerequisites</a><br>
+<a href="#result">Result</a><br>
+<a href="#parameters">Parameters</a><br>
+</small></p>
+
+<a name="module"><h3>Module</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+
+<p>Actions &raquo; Miscellaneous &raquo; Replace Labels of Text Units</p>
+
+<a name="description"><h3>Description</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>This task finds and replaces labels of processed text units in the specified
+DIAsDEM collection. Use cases: Correct spelling mistakes made in a cluster label
+file that have been propagated into the collection by the task <i>Tag Text 
+Units</i>. Prior to deriving a conceptual DTD, replace auxiliary labels
+such as &quot;Ignore Topic&quot; with &quot;-&quot; (i.e., the cluster label
+denoting qualitatively unacceptable text unit clusters) to prevent them from 
+being included in the conceptual DTD.</p>
+
+<a name="prerequisites"><h3>Prerequisites</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>None.</p>
+
+<a name="result"><h3>Result</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<p>If the label of a processed text unit in the specified DIAsDEM collection
+equals <i>Find Label</i>, it will be replaced by <i>Replace With</i>. Note
+that both the iteration number and the cluster ID of processed text units 
+remain unchanged.</p>
+
+<a name="parameters"><h3>Parameters</h3></a>
+<p><small>
+<a href="#top">Top of the Page</a>
+</small></p>
+
+<h4>Collection File</h4>
+<p>Input parameter: Valid local file name of existing collection file; file 
+extension: <code>.dcf</code>; default value: project property <i>Default 
+Collection File</i></p>
+
+<h4>Find Label</h4>
+<p>Input parameter: Case-sensitive label of processed text units to find; 
+example: <code>Ignore Topic</code>; default value: project property 
+<i>Replace Labels of Text Units: Default Find Label</i></p>
+
+<h4>Replace With</h4>
+<p>Input parameter: Label of processed text units to replace; example: 
+<code>-</code>; default value: project property 
+<i>Replace Labels of Text Units: Default Replace With</i></p>
+
+<h4>Log File</h4>
+<p>Input parameter: Valid local file name of log file, which will either be 
+created or replaced; log file will contain details of text units whose labels
+have been replaced; file extension: <code>.txt</code>; default value: project 
+property <i>Replace Labels of Text Units: Default Log File Name</i></p>
+
+<p><small>
+<a name="bot"><a href="#top">Top of the Page</a></a>
+</small></p>
+</body>
+</html>

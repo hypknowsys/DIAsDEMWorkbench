@@ -1,0 +1,12 @@
+# This file contains additional plug-ins of WUM Workbench. 
+org.hypknowsys.wum.tasks.project.newProject.NewProjectTask
+org.hypknowsys.wum.tasks.project.openProject.OpenProjectTask
+org.hypknowsys.wum.tasks.project.closeProject.CloseProjectTask
+org.hypknowsys.wum.tasks.understand.generateSummaryReport.GenerateSummaryReportTask
+org.hypknowsys.wum.tasks.prepare.importLogFile.ImportLogFileTask
+org.hypknowsys.wum.tasks.prepare.sessionizeLogFiles.SessionizeLogFilesTask
+org.hypknowsys.wum.tasks.prepare.aggregateSessions.AggregateSessionsTask
+org.hypknowsys.wum.resources.templates.taskTemplate.TemplateTask
+org.hypknowsys.wum.resources.templates.nonBlockingTaskTemplate.TemplateTask
+org.hypknowsys.wum.client.gui.tools.xmlDocumentViewer.XmlDocumentViewerTask
+org.hypknowsys.wum.client.gui.tools.htmlDocumentViewer.HtmlDocumentViewerTask

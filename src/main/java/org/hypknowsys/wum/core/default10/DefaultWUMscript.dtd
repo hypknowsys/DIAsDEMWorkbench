@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- 2003-05-19, kwinkler -->
+
+<!ELEMENT WUMscript (Label, WUMscriptTask*, Notes?, Log?,
+  Status?, StartTimeStamp?, EndTimeStamp?)>
+
+<!ELEMENT WUMscriptTask (Label, Parameter, Result?, Notes?, Log?,
+  Status?, StartTimeStamp?, EndTimeStamp?)>
+
+<!ELEMENT Label (#PCDATA)>
+<!ELEMENT ClassName (#PCDATA)>
+<!ELEMENT Parameter (ParameterAttributes)>
+<!ELEMENT Result (ResultAttributes)>
+<!ELEMENT Notes (#PCDATA)>
+<!ELEMENT Log (#PCDATA)>
+<!ELEMENT Status (#PCDATA)>
+<!ELEMENT StartTimeStamp (#PCDATA)>
+<!ELEMENT EndTimeStamp (#PCDATA)>
+
+<!ELEMENT ParameterAttributes (ParameterAttribute*)>
+<!ELEMENT ResultAttributes (ResultAttribute*)>
+
+<!ELEMENT ParameterAttribute (AttributeName, AttributeValue)>
+<!ELEMENT ResultAttribute (AttributeName, AttributeValue)>
+
+<!ELEMENT AttributeName (#PCDATA)>
+<!ELEMENT AttributeValue (#PCDATA)>
+
+<!ATTLIST WUMscriptTask 
+  ClassName CDATA #IMPLIED
+  Execute CDATA #IMPLIED
+>
+<!ATTLIST Parameter 
+  ClassName CDATA #IMPLIED
+>
+<!ATTLIST Result 
+  ClassName CDATA #IMPLIED
+>
