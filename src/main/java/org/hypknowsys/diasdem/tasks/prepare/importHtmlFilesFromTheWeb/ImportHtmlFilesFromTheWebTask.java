@@ -409,7 +409,7 @@ public class ImportHtmlFilesFromTheWebTask extends DiasdemScriptableNonBlockingT
       while (urlString != null) {
         URL url = new URL(urlString);
         InputStreamReader inputStreamReader = new InputStreamReader(
-        url.openStream(), "ISO-8859-1"); // "ISO8859_1");
+        url.openStream(), "UTF-8"); // "UTF-8");
         BufferedReader inputStream = new BufferedReader(
         inputStreamReader, 102400);
         String outputFileName = Tools.ensureTrailingSlash(pDownloadDirectory)

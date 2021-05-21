@@ -177,7 +177,7 @@ implements DIAsDEMpreliminaryDtd {
     return this.Elements; }
   
   public String getEncodingTag() {
-    return "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>"; }
+    return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"; }
   public String getDoctypeTag() {
     return "<!DOCTYPE " + this.getRootElement() + " SYSTEM '"
     + this.getRootElement() + ".dtd'>"; }
@@ -505,7 +505,7 @@ implements DIAsDEMpreliminaryDtd {
       TmpStringBuffer.append(" ");
       TmpStringBuffer.append(TmpString);
       TmpStringBuffer.append("=\"");
-      TmpStringBuffer.append(Tools.insertISO88591EntityReferences(
+      TmpStringBuffer.append(Tools.insertUTF8EntityReferences(
       ((StringBuffer)TmpTreeMap.get(TmpString)).toString()));
       TmpStringBuffer.append("\"");
     }
@@ -821,7 +821,7 @@ implements DIAsDEMpreliminaryDtd {
     TextFile dtd = new TextFile(new File(pFileName));
     
     dtd.open();
-    dtd.setFirstLine("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>");
+    dtd.setFirstLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
     dtd.setNextLine("");
     dtd.setNextLine("<!ELEMENT " + this.getRootElement()
     + " (MetaData*, TaggedDocument)> ");

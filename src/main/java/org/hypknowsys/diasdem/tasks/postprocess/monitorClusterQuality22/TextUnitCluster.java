@@ -310,7 +310,7 @@ public class TextUnitCluster implements Serializable {
       TmpString =
       "<td valign=\"top\" align=\"left\" " + bgcolor + "><font color=\""
       + color + "\">"
-      + Tools.insertISO88591EntityReferences(currentTerm.getWord())
+      + Tools.insertUTF8EntityReferences(currentTerm.getWord())
       + "</font> </td>"
       + "<td valign=\"top\" align=\"right\" " + bgcolor + "><font color=\""
       + color + "\">"
@@ -391,7 +391,7 @@ public class TextUnitCluster implements Serializable {
       TmpString =
       "<td valign=\"top\" align=\"left\" " + bgcolor + "><font color=\""
       + color + "\">"
-      + Tools.insertISO88591EntityReferences(currentTerm.getWord())
+      + Tools.insertUTF8EntityReferences(currentTerm.getWord())
       + "</font> </td>"
       + "<td valign=\"top\" align=\"right\" " + bgcolor + "><font color=\""
       + color + "\">"
@@ -472,7 +472,7 @@ public class TextUnitCluster implements Serializable {
       TmpString =
       "<td valign=\"top\" align=\"left\" " + bgcolor + "><font color=\""
       + color + "\">"
-      + Tools.insertISO88591EntityReferences(currentTerm.getWord())
+      + Tools.insertUTF8EntityReferences(currentTerm.getWord())
       + "</font> </td>"
       + "<td valign=\"top\" align=\"right\" " + bgcolor + "><font color=\""
       + color + "\">"
