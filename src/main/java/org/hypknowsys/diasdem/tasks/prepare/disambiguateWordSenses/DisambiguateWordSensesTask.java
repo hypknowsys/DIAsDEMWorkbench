@@ -225,7 +225,7 @@ public class DisambiguateWordSensesTask extends DiasdemScriptableNonBlockingTask
     DebuggingHtmlFile = null;
     if (!Tools.stringIsNullOrEmpty(CastParameter.getDebuggingHtmlFileName())) {
       Template DebuggingOutputHeader = new Template(Tools
-      .stringFromTextualSystemResource("org/hypknowsys/diasdem/resources/html/"
+      .stringFromTextualSystemResource("html/"
       + "HtmlFile_HeaderTemplate.html"));
       DebuggingOutputHeader.addValue("${Title}", "Disambiguate Word Senses");
       DebuggingHtmlFile = new TextFile(new File(CastParameter
@@ -280,7 +280,7 @@ public class DisambiguateWordSensesTask extends DiasdemScriptableNonBlockingTask
     
     if (!Tools.stringIsNullOrEmpty(CastParameter.getDebuggingHtmlFileName())) {
       DebuggingHtmlFile.setNextLine(Tools.stringFromTextualSystemResource(
-      "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+      "html/HtmlFile_FooterTemplate.html"));
       DebuggingHtmlFile.close();
     }    
     super.closeDiasdemCollection();

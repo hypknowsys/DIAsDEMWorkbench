@@ -503,7 +503,7 @@ public class ComputeTermFrequencyStatisticsTask extends DiasdemScriptableNonBloc
   private void exportStatisticsInHtmlFormat() {
     
     Template DebuggingOutputHeader = new Template(Tools
-    .stringFromTextualSystemResource("org/hypknowsys/diasdem/resources/html/"
+    .stringFromTextualSystemResource("html/"
     + "HtmlFile_HeaderTemplate.html"));
     DebuggingOutputHeader.addValue("${Title}", "Term Frequency Statistics");
     TextFile htmlFile =  new TextFile( new File(Tools.removeFileExtension(
@@ -612,7 +612,7 @@ public class ComputeTermFrequencyStatisticsTask extends DiasdemScriptableNonBloc
     }
     htmlFile.setNextLine("</table>");
     htmlFile.setNextLine(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     htmlFile.close();
         
   }
@@ -622,7 +622,7 @@ public class ComputeTermFrequencyStatisticsTask extends DiasdemScriptableNonBloc
   private void createHtmlTextUnitsFileHeader() {
     
     Template DebuggingOutputHeader = new Template(Tools
-    .stringFromTextualSystemResource("org/hypknowsys/diasdem/resources/html/"
+    .stringFromTextualSystemResource("html/"
     + "HtmlFile_HeaderTemplate.html"));
     DebuggingOutputHeader.addValue("${Title}", "Term Frequency Statistics");
     HtmlTextUnitsFile =  new TextFile( new File(Tools
@@ -706,7 +706,7 @@ public class ComputeTermFrequencyStatisticsTask extends DiasdemScriptableNonBloc
   private void createHtmlTextUnitsFileFooter() {
     
     HtmlTextUnitsFile.setNextLine(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     HtmlTextUnitsFile.close();
         
   }

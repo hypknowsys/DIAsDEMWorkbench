@@ -148,7 +148,7 @@ public class ReplaceNamedEntitiesTask extends DiasdemScriptableNonBlockingTask {
     "", KProperty.STRING, KProperty.NOT_EDITABLE),    
     new KProperty("NEEX21_DEFAULT_PREFIX_TOKEN_REGEX", 
     "NEEX 2.1: Default Regex for Street Prefix Tokens",
-    "([A-ZÖÄÜ][A-ZÖÄÜa-zöäüß\\-\\.]*)", 
+    "([A-Z][A-Za-z\\-\\.]*)",
     KProperty.STRING, KProperty.NOT_EDITABLE),
     new KProperty("NEEX21_DEFAULT_AFFFIX_TOKEN_REGEX", 
     "NEEX 2.1: Default Regex for Street Prefix Tokens",

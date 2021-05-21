@@ -698,7 +698,7 @@ implements DIAsDEMconceptualDtd {
     doc.open();
     
     Template htmlHeader = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_HeaderTemplate.html"));
+    "html/HtmlFile_HeaderTemplate.html"));
     htmlHeader.addValue("${Title}", "Documentation of Conceptual XML DTD");
     doc.setFirstLine(htmlHeader.insertValues());
     doc.setNextLine(
@@ -817,7 +817,7 @@ implements DIAsDEMconceptualDtd {
     }
     
     Template htmlFooter = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     doc.setNextLine(htmlFooter.insertValues());
     doc.close();
     

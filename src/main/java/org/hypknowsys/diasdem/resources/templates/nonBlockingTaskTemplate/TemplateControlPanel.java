@@ -59,7 +59,7 @@ public class TemplateControlPanel extends DiasdemActionsControlPanel {
   
   // comment out subsequent code, if there is no help available
   private String DIASDEM_TASK_HELP_RESOURCE =
-  "org/hypknowsys/diasdem/resources/templates"
+  "templates"
   + "/nonBlockingTaskTemplate/Template.html";
   // un-comment subsequent code, if there is no help available
   // private String DIASDEM_TASK_HELP_RESOURCE = null;

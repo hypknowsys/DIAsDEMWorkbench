@@ -264,9 +264,9 @@ extends DiasdemActionsControlPanel {
     version_Panel.startFocusForwarding(Version_Text);
     
     String contact = Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/txt/CONTACT.txt");
+    "txt/CONTACT.txt");
     if (contact.length() == 0) {
-      contact = "The file org/hypknowsys/diasdem/resources/txt/CONTACT.txt\n"
+      contact = "The file txt/CONTACT.txt\n"
       + "could not be retrieved from CLASSPATH.";
     }
     Contact_Text = new KScrollTextArea();
@@ -281,9 +281,9 @@ extends DiasdemActionsControlPanel {
     contact_Panel.startFocusForwarding(Contact_Text);
     
     String credits = Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/txt/CREDITS.txt");
+    "txt/CREDITS.txt");
     if (credits.length() == 0) {
-      contact = "The file org/hypknowsys/diasdem/resources/txt/CREDITS.txt\n"
+      contact = "The file txt/CREDITS.txt\n"
       + "could not be retrieved from CLASSPATH.";
     }
     Credits_Text = new KScrollTextArea();
@@ -298,9 +298,9 @@ extends DiasdemActionsControlPanel {
     credits_Panel.startFocusForwarding(Credits_Text);
     
     String license = Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/txt/LICENSE.txt");
+    "txt/LICENSE.txt");
     if (license.length() == 0) {
-      contact = "The file org/hypknowsys/diasdem/resources/txt/LICENSE.txt\n"
+      contact = "The file txt/LICENSE.txt\n"
       + "could not be retrieved from CLASSPATH.";
     }
     License_Text = new KScrollTextArea();

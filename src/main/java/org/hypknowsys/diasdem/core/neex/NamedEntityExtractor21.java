@@ -303,7 +303,7 @@ public class NamedEntityExtractor21 {
     parameterDirectory + "ProfessionsDE_HeinsUndPartner21.txt", true,
     parameterDirectory + "StreetExceptionsDE.txt",
     parameterDirectory + "StreetSuffixesDE_HeinsUndPartner21.txt",
-    "([A-ZÖÄÜ][A-ZÖÄÜa-zöäüß\\-\\.]*)",
+    "([A-Z][A-Za-z\\-\\.]*)",
     "([0-9\\-]{1,4}[a-zA-Z]?|[a-zA-Z\\-\\/]?|[Nn][Rr][\\.]?)",
     "(.*-$|^Die.*|^Der.*|^Das.*|[\\p{Alpha}]*ring$|.*\\/$)", 2, 
     "([0-9\\.]{2,}|^<<.*)");

@@ -659,7 +659,7 @@ public class TextUnitCluster implements Serializable {
     + "</tr></table>");
 
     Template htmlFooter = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     pClusterFile.setNextLine(htmlFooter.insertValues());
     pClusterFile.close();
     

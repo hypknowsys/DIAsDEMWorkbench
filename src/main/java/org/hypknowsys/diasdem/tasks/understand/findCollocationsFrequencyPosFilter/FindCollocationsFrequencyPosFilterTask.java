@@ -559,7 +559,7 @@ extends DiasdemScriptableNonBlockingTask {
   private void exportCollocationsInHtmlFormat() {
     
     Template DebuggingOutputHeader = new Template(Tools
-    .stringFromTextualSystemResource("org/hypknowsys/diasdem/resources/html/"
+    .stringFromTextualSystemResource("html/"
     + "HtmlFile_HeaderTemplate.html"));
     DebuggingOutputHeader.addValue("${Title}", "Frequent Collocations");
     TextFile htmlFile =  new TextFile( new File(Tools.removeFileExtension(
@@ -617,7 +617,7 @@ extends DiasdemScriptableNonBlockingTask {
     }
     htmlFile.setNextLine("</table>");
     htmlFile.setNextLine(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     htmlFile.close();
     
   }

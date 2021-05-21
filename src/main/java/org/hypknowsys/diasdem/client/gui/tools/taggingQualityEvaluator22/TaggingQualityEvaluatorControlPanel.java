@@ -548,7 +548,7 @@ extends DiasdemActionsControlPanel {
           + "I: number of extracted, but incorrect named entities; "
           + "M: number of missing named entities</p>");
           Template footer = new Template(Tools.stringFromTextualSystemResource(
-          "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html")
+          "html/HtmlFile_FooterTemplate.html")
           );
           HtmlOutputTextFile.setNextLine(footer.insertValues());
         }
@@ -564,7 +564,7 @@ extends DiasdemActionsControlPanel {
         PresentResultsOfXmlTagNames.appendHtmlSection(HtmlResultTextFile);
         PresentResultsOfXmlTagAttributes.appendHtmlSection(HtmlResultTextFile);
         Template footer = new Template(Tools.stringFromTextualSystemResource(
-        "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+        "html/HtmlFile_FooterTemplate.html"));
         HtmlResultTextFile.setNextLine(footer.insertValues());
         HtmlResultTextFile.close();
       }
@@ -1089,7 +1089,7 @@ extends DiasdemActionsControlPanel {
     HtmlOutputTextFile.open();
     if (HtmlOutputTextFile.getSize() == 0) {
       Template header = new Template(Tools.stringFromTextualSystemResource(
-      "org/hypknowsys/diasdem/resources/html/HtmlFile_HeaderTemplate.html"));
+      "html/HtmlFile_HeaderTemplate.html"));
       header.addValue("${Title}", "Protocol of Tagging Quality Evaluation");
       HtmlOutputTextFile.setNextLine(header.insertValues());
       HtmlOutputTextFile.setNextLine("<p>Created by Tools &gt; Tagging "
@@ -1125,7 +1125,7 @@ extends DiasdemActionsControlPanel {
     HtmlResultTextFile.empty();
     HtmlResultTextFile.open();
     Template header = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_HeaderTemplate.html"));
+    "html/HtmlFile_HeaderTemplate.html"));
     header.addValue("${Title}", "Results of Tagging Quality Evaluation");
     HtmlResultTextFile.setNextLine(header.insertValues());
     HtmlResultTextFile.setNextLine("<p>Created by Tools &gt; Tagging "

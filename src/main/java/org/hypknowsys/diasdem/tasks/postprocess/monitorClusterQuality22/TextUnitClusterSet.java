@@ -412,7 +412,7 @@ public class TextUnitClusterSet implements Serializable {
     }
     
     Template htmlFooter = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     
     // complete cluster summary; rows = descriptors;
     // columns = relative frequencies
@@ -448,7 +448,7 @@ public class TextUnitClusterSet implements Serializable {
     nf6.setMinimumFractionDigits(6);
     nf6.setMaximumFractionDigits(6);
     Template htmlHeader = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_HeaderTemplate.html"));
+    "html/HtmlFile_HeaderTemplate.html"));
     htmlHeader.addValue("${Title}", "DIAsDEM Cluster Quality Monitor");
     
     TextFile indexHtmlFile = new TextFile(new File(
@@ -1055,7 +1055,7 @@ public class TextUnitClusterSet implements Serializable {
     // at all
     
     Template htmlHeader = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_HeaderTemplate.html"));
+    "html/HtmlFile_HeaderTemplate.html"));
     htmlHeader.addValue("${Title}", "Disambiguate Word Senses");
     
     MyDescriptorSummaryFile = new TextFile(new File(

@@ -937,7 +937,7 @@ public class DefaultDIAsDEMthesaurus implements DIAsDEMthesaurus {
     htmlFile = new TextFile(new File(pOutputFileName));
     htmlFile.open();
     Template header = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_HeaderTemplate.html"));
+    "html/HtmlFile_HeaderTemplate.html"));
     header.addValue("${Title}", "DIAsDEM Thesaurus");
     htmlFile.setFirstLine(header.insertValues());
     
@@ -1035,7 +1035,7 @@ public class DefaultDIAsDEMthesaurus implements DIAsDEMthesaurus {
     htmlFile.setNextLine("</table>");
     
     Template footer = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     htmlFile.setNextLine(footer.insertValues());
     htmlFile.close();
     

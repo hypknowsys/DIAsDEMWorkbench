@@ -451,7 +451,7 @@ public class DrawDocumentSampleTask extends DiasdemScriptableNonBlockingTask {
     String diasdemDocFile = null;
     String taggedDocFile = null;
     Template header = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_HeaderTemplate.html"));
+    "html/HtmlFile_HeaderTemplate.html"));
     header.addValue("${Title}", "Random Sample of DIAsDEM Documents");
     sampleDocsHtmlFile.setFirstLine(header.insertValues());
     sampleDocsHtmlFile.setNextLine("<p>Created by " + this.getClass().getName()
@@ -495,7 +495,7 @@ public class DrawDocumentSampleTask extends DiasdemScriptableNonBlockingTask {
       .getNextLineButIgnoreCommentsAndEmptyLines();
     }
     Template footer = new Template(Tools.stringFromTextualSystemResource(
-    "org/hypknowsys/diasdem/resources/html/HtmlFile_FooterTemplate.html"));
+    "html/HtmlFile_FooterTemplate.html"));
     sampleDocsHtmlFile.setNextLine(footer.insertValues());
     
     sampleTextUnitsFile.close();

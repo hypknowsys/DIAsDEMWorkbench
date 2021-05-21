@@ -100,7 +100,7 @@ public class ProfessionBasicNeExtractor21 {
     DebuggingMode = NeTaskParameter.createDebuggingFiles();
     if (DebuggingMode) {
       Template debuggingOutputHeader = new Template(Tools
-      .stringFromTextualSystemResource("org/hypknowsys/diasdem/resources/html/"
+      .stringFromTextualSystemResource("html/"
       + "HtmlFile_HeaderTemplate.html"));
       debuggingOutputHeader.addValue("${Title}", "NEEX 2.1: Professions "
       + " Extracted by OrganizationBasicNeExtractor");
