@@ -112,7 +112,7 @@ public class GateDocument {
   
   public void addText(String pText) {
     
-    this.TextWithNodes.append(Tools.insertISO88591EntityReferences(pText));
+    this.TextWithNodes.append(Tools.insertUTF8EntityReferences(pText));
     
   }
   
@@ -120,7 +120,7 @@ public class GateDocument {
   
   public void addPlainText(String pText) {
     
-    this.TextWithNodes.append(Tools.insertISO88591EntityReferences(pText));
+    this.TextWithNodes.append(Tools.insertUTF8EntityReferences(pText));
     
   }
   
@@ -141,7 +141,7 @@ public class GateDocument {
     this.EndNodeID = this.getNextNodeID();
     
     this.TextWithNodes.append(this.createNextNodeTag(this.StartNodeID));
-    this.TextWithNodes.append(Tools.insertISO88591EntityReferences(pText));
+    this.TextWithNodes.append(Tools.insertUTF8EntityReferences(pText));
     this.TextWithNodes.append(this.createNextNodeTag(this.EndNodeID));
     
     this.createStruturalAnnotation(pStructuralAnnotationType, this.StartNodeID,
@@ -181,7 +181,7 @@ public class GateDocument {
     this.EndNodeID = this.getNextNodeID();
     
     this.TextWithNodes.append(this.createNextNodeTag(this.StartNodeID));
-    this.TextWithNodes.append(Tools.insertISO88591EntityReferences(pText));
+    this.TextWithNodes.append(Tools.insertUTF8EntityReferences(pText));
     this.TextWithNodes.append(this.createNextNodeTag(this.EndNodeID));
     
     this.createSemanticAnnotation(pSemanticAnnotationType, this.StartNodeID,
@@ -227,7 +227,7 @@ public class GateDocument {
   public void writeXml(String pFileName) {
     
     TextFile textFile = new TextFile(new File(pFileName));
-    textFile.setFirstLine("<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?>");
+    textFile.setFirstLine("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>");
     textFile.setNextLine("<GateDocument>");
     textFile.setNextLine("<TextWithNodes>");
     textFile.setNextLine(this.TextWithNodes.toString());

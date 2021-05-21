@@ -239,14 +239,14 @@ WordSenseDisambiguator {
           else {
             HtmlStringBuffer.append("<font class=\"redBold\">");
           }
-          HtmlStringBuffer.append(Tools.insertISO88591EntityReferences(
+          HtmlStringBuffer.append(Tools.insertUTF8EntityReferences(
           Tokens[i]));
           HtmlStringBuffer.append(SenseTag);
           HtmlStringBuffer.append("</font>");
           if (DisambiguatedSenseIndex >= 0) {
             HtmlStringBuffer.append("<font class=\"silver\">");
             HtmlStringBuffer.append("<sub>");
-            HtmlStringBuffer.append(Tools.insertISO88591EntityReferences(
+            HtmlStringBuffer.append(Tools.insertUTF8EntityReferences(
             SenseIndicators[DisambiguatedSenseIndex]));
             HtmlStringBuffer.append("</sub>");
             HtmlStringBuffer.append("</font>");
@@ -256,7 +256,7 @@ WordSenseDisambiguator {
       else {
         ResultStringBuffer.append(Tokens_OriginalNePlaceholders[i]);
         if (DebuggingHtmlFile != null) {
-          HtmlStringBuffer.append(Tools.insertISO88591EntityReferences(
+          HtmlStringBuffer.append(Tools.insertUTF8EntityReferences(
           Tokens[i]));
         }
       }      

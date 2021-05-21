@@ -198,7 +198,7 @@ public class TextUnitCluster implements Serializable {
         if (relFrequency > 0.95) {
           pClusterFile.setNextLine(
             "<td valign=\"top\" align=\"left\" bgcolor=\"red\">" +
-            Tools.insertISO88591EntityReferences( currentTerm.getWord() ) +
+            Tools.insertUTF8EntityReferences( currentTerm.getWord() ) +
             "</td> <td valign=\"top\" align=\"left\" bgcolor=\"red\">" +
             currentTerm.getOccurrences() +
             "</td> <td valign=\"top\" align=\"left\" bgcolor=\"red\">" +
@@ -214,7 +214,7 @@ public class TextUnitCluster implements Serializable {
         else if ( (relFrequency <= 0.95) && (relFrequency > 0.8) ) {
           pClusterFile.setNextLine(
             "<td valign=\"top\" align=\"left\" bgcolor=\"orange\">" +
-            Tools.insertISO88591EntityReferences( currentTerm.getWord() ) +
+            Tools.insertUTF8EntityReferences( currentTerm.getWord() ) +
             "</td> <td valign=\"top\" align=\"left\" bgcolor=\"orange\">" +
             currentTerm.getOccurrences() +
             "</td> <td valign=\"top\" align=\"left\" bgcolor=\"orange\">" +
@@ -230,7 +230,7 @@ public class TextUnitCluster implements Serializable {
         else if ( (relFrequency <= 0.8) && (relFrequency > 0.6) ) {
           pClusterFile.setNextLine(
             "<td valign=\"top\" align=\"left\" bgcolor=\"yellow\">" +
-            Tools.insertISO88591EntityReferences( currentTerm.getWord() ) +
+            Tools.insertUTF8EntityReferences(currentTerm.getWord() ) +
             "</td> <td valign=\"top\" align=\"left\" bgcolor=\"yellow\">" +
             currentTerm.getOccurrences() +
             "</td> <td valign=\"top\" align=\"left\" bgcolor=\"yellow\">" +
@@ -246,7 +246,7 @@ public class TextUnitCluster implements Serializable {
         else {
           pClusterFile.setNextLine(
             "<td valign=\"top\" align=\"left\">" + 
-            Tools.insertISO88591EntityReferences( currentTerm.getWord() ) +
+            Tools.insertUTF8EntityReferences(currentTerm.getWord() ) +
             "</td> <td valign=\"top\" align=\"left\">" +
             currentTerm.getOccurrences() +
             "</td> <td valign=\"top\" align=\"left\">" +  relFrequency +

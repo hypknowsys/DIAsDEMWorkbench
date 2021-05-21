@@ -1039,7 +1039,7 @@ public class TextUnitClusterSet implements Serializable {
     MyHtmlMappingArray = new String[NumberOfDescriptorsInControlledVocabulary];
     while (MyTerm != null) {
       MyHtmlMappingArray[((Integer)MyMappingHashtable.get(MyTerm.getWord()))
-      .intValue()] = Tools.insertISO88591EntityReferences(MyTerm.getWord())
+      .intValue()] = Tools.insertUTF8EntityReferences(MyTerm.getWord())
       + "";
       MyTerm = MyDescriptors.getNextTerm();
     }

@@ -346,7 +346,7 @@ public class DefaultDIAsDEMthesaurusTerm implements DIAsDEMthesaurusTerm {
       TmpStringBuffer.append("&nbsp;");
     }
     else {
-      TmpStringBuffer.append(Tools.insertISO88591EntityReferences(Tools
+      TmpStringBuffer.append(Tools.insertUTF8EntityReferences(Tools
       .removeQuotesAndNewLines(Word)));
     }
     TmpStringBuffer.append("</td> <td align=\"left\" valign=\"top\">");
@@ -357,42 +357,42 @@ public class DefaultDIAsDEMthesaurusTerm implements DIAsDEMthesaurusTerm {
     if (!HierarchyLevel.trim().equals("-") && HierarchyLevel.length() > 0) {
       TmpStringBuffer.append("<br>");
       TmpStringBuffer.append("HierarchyLevel = "
-      + Tools.insertISO88591EntityReferences(Tools.removeQuotesAndNewLines(
+      + Tools.insertUTF8EntityReferences(Tools.removeQuotesAndNewLines(
       HierarchyLevel)) + "; ");
       appendNbsp = false;
     }
     if (!Synonyms.trim().equals("-") && Synonyms.length() > 0) {
       TmpStringBuffer.append("<br>");
       TmpStringBuffer.append("Synomyms = \""
-      + Tools.insertISO88591EntityReferences(Tools.removeQuotesAndNewLines(
+      + Tools.insertUTF8EntityReferences(Tools.removeQuotesAndNewLines(
       Synonyms)) + "\"; ");
       appendNbsp = false;
     }
     if (!BroaderTerm.trim().equals("-") && BroaderTerm.length() > 0) {
       TmpStringBuffer.append("<br>");
       TmpStringBuffer.append("BroaderTerms = \""
-      + Tools.insertISO88591EntityReferences(Tools.removeQuotesAndNewLines(
+      + Tools.insertUTF8EntityReferences(Tools.removeQuotesAndNewLines(
       BroaderTerm)) + "\"; ");
       appendNbsp = false;
     }
     if (!NarrowerTerms.trim().equals("-") && NarrowerTerms.length() > 0) {
       TmpStringBuffer.append("<br>");
       TmpStringBuffer.append("NarrowerTerms = \""
-      + Tools.insertISO88591EntityReferences(Tools.removeQuotesAndNewLines(
+      + Tools.insertUTF8EntityReferences(Tools.removeQuotesAndNewLines(
       NarrowerTerms)) + "\"; ");
       appendNbsp = false;
     }
     if (!UseDescriptor.trim().equals("-") && UseDescriptor.length() > 0) {
       TmpStringBuffer.append("<br>");
       TmpStringBuffer.append("UseDescriptor = \""
-      + Tools.insertISO88591EntityReferences(Tools.removeQuotesAndNewLines(
+      + Tools.insertUTF8EntityReferences(Tools.removeQuotesAndNewLines(
       UseDescriptor)) + "\"; ");
       appendNbsp = false;
     }
     if (!ScopeNotes.trim().equals("-") && ScopeNotes.length() > 0) {
       TmpStringBuffer.append("<br>");
       TmpStringBuffer.append("ScopeNotes = \""
-      + Tools.insertISO88591EntityReferences(Tools.removeQuotesAndNewLines(
+      + Tools.insertUTF8EntityReferences(Tools.removeQuotesAndNewLines(
       ScopeNotes)) + "\"; ");
       appendNbsp = false;
     }
@@ -417,7 +417,7 @@ public class DefaultDIAsDEMthesaurusTerm implements DIAsDEMthesaurusTerm {
       TmpStringBuffer.append("&nbsp;");
     }
     else {
-      TmpStringBuffer.append(Tools.insertISO88591EntityReferences(Tools
+      TmpStringBuffer.append(Tools.insertUTF8EntityReferences(Tools
       .removeQuotesAndNewLines(Word)));
     }
     TmpStringBuffer.append("</td> <td align=\"left\" valign=\"top\">");
@@ -425,7 +425,7 @@ public class DefaultDIAsDEMthesaurusTerm implements DIAsDEMthesaurusTerm {
       TmpStringBuffer.append("&nbsp;");
     }
     else {
-      TmpStringBuffer.append(Tools.insertISO88591EntityReferences(Tools
+      TmpStringBuffer.append(Tools.insertUTF8EntityReferences(Tools
       .removeQuotesAndNewLines(pContents)));
     }
     TmpStringBuffer.append("</td> </tr>");

@@ -666,7 +666,7 @@ public class Tools {
 
   /* ########## ########## ########## ########## ########## ######### */
 
-  public static String insertISO88591EntityReferences(String pSource) {
+  public static String insertUTF8EntityReferences(String pSource) {
 
     StringBuffer result = new StringBuffer( pSource.length() + 1000);
     for (int i = 0; i < pSource.length(); i++)

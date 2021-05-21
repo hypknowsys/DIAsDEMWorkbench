@@ -420,7 +420,7 @@ public class TextUnitClusterSet implements Serializable {
     htmlMappingArray = new String[descriptorCounter];
     while (term != null) {
       htmlMappingArray[ ( (Integer)mappingHashtable.get( term.getWord() ) )
-      .intValue() ] = Tools.insertISO88591EntityReferences(term.getWord()) + "";
+      .intValue() ] = Tools.insertUTF8EntityReferences(term.getWord()) + "";
       term = descriptors.getNextTerm();
     }
     

@@ -64,8 +64,8 @@ public class DefaultDIAsDEMvolume implements DIAsDEMvolume {
   public static String DTD_ROOT_ELEMENT = "DefaultDIAsDEMvolume";
   public static String DTD_DOCUMENT_ELEMENT = "DefaultDIAsDEMdocument";
   public static String DTD_FILE_NAME = "DefaultDIAsDEMvolume.dtd";
-  public static String DTD_ENCODING = "ISO-8859-1";
-  
+  public static String DTD_ENCODING = "utf-8";
+
   /* ########## ########## ########## ########## ########## ######### */
   /* ########## constructors  */
   /* ########## ########## ########## ########## ########## ######### */
@@ -330,7 +330,7 @@ public class DefaultDIAsDEMvolume implements DIAsDEMvolume {
     }
     textFile.open();
     textFile.setFirstLine(
-    "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n"
+    "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
     + "\n"
     + "<!-- DIAsDEM Workbench 2.1, 15 August 2003, kwinkler -->\n"
     + "\n"

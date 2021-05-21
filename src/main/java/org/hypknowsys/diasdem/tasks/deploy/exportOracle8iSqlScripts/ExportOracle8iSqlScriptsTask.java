@@ -480,7 +480,7 @@ extends DiasdemScriptableNonBlockingTask {
         if (DiasdemTextUnit.getClusterLabel() != null
         && (DiasdemTextUnit.getClusterLabel().equals("-")
         || DiasdemTextUnit.getClusterLabel().equals("="))) {
-          currentXmlDocument.append(Tools.insertISO88591EntityReferences(
+          currentXmlDocument.append(Tools.insertUTF8EntityReferences(
           DiasdemDocument.getOriginalTextUnit(i).getContentsAsString()
           .replace('\n', ' ')));
           currentXmlDocument.append(' ');
@@ -498,7 +498,7 @@ extends DiasdemScriptableNonBlockingTask {
           else {
             currentXmlDocument.append("<" + DiasdemTextUnit.getClusterLabel() + ">");
           }
-          currentXmlDocument.append(Tools.insertISO88591EntityReferences(
+          currentXmlDocument.append(Tools.insertUTF8EntityReferences(
           DiasdemDocument.getOriginalTextUnit(i).getContentsAsString()
           .replace('\n', ' ')));
           currentXmlDocument.append("</" + DiasdemTextUnit.getClusterLabel() + ">");

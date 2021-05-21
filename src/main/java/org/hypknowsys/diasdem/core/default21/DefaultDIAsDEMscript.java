@@ -611,7 +611,7 @@ public class DefaultDIAsDEMscript implements DIAsDEMscript {
     }
     
     Format xmlFormat = Format.getPrettyFormat();
-    xmlFormat.setEncoding("ISO-8859-1");
+    xmlFormat.setEncoding("UTF-8");
     try {
       XMLOutputter xmlOutputter = new
       XMLOutputter(xmlFormat);

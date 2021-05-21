@@ -594,7 +594,7 @@ public class DefaultWUMscript implements WUMscript {
 
     org.jdom.output.Format xmlFormat = org.jdom.output.Format
     .getPrettyFormat();
-    xmlFormat.setEncoding("ISO-8859-1");
+    xmlFormat.setEncoding("UTF-8");
     try {
       org.jdom.output.XMLOutputter xmlOutputter = new
       org.jdom.output.XMLOutputter(xmlFormat);
